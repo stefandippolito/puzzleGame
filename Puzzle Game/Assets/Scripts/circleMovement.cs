@@ -7,14 +7,15 @@ public class circleMovement : MonoBehaviour
     public float speed = 2f;
     private float yPos;
     private float offset;
+
     //bool starts at true meaning the balls always start going up
     private bool up = true;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Get starting y position for to calculate offset
         yPos = transform.position.y;
-        transform.Translate(Vector2.up * speed * Time.deltaTime);
     }
 
     // Update is called once per frame
