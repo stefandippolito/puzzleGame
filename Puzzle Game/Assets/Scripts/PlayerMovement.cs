@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
             transform.Rotate(0, 0, 90);
         }
 
-        //since the players position rotates aound the z axis I can't just do Vector2.right to move it forward, I did 4 if cases for each rotate senero so the 
+        //since the players position rotates aound the z axis I can't just do Vector3.right to move it forward, I did 4 if cases for each rotate senero so the 
         //cube is always moving forward on he screan.
         if (transform.rotation.eulerAngles.z == 0)
         {
