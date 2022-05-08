@@ -27,13 +27,13 @@ public class circleMovement : MonoBehaviour
         
 
         //if the ball hits an offset of 0.5 then make up changes to false
-        if (offset >= .5)
+        if (offset >= .2)
         {
             up = false;
         }
 
         //if the ball hits an offset of -0.5 then up changes to true
-        if (offset <= -.5)
+        if (offset <= -.2)
         {
             up = true;
         }
