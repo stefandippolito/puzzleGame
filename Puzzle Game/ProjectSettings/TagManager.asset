@@ -11,6 +11,10 @@ TagManager:
   - lightBlue
   - white
   - redEnemy
+  - greenEnemy
+  - yellowEnemy
+  - pinkEnemy
+  - lightBlueEnemy
   layers:
   - Default
   - TransparentFX
