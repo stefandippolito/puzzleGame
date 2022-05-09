@@ -15,6 +15,7 @@ TagManager:
   - yellowEnemy
   - pinkEnemy
   - lightBlueEnemy
+  - whiteEnemy
   layers:
   - Default
   - TransparentFX
