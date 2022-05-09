@@ -10,6 +10,7 @@ TagManager:
   - pink
   - lightBlue
   - white
+  - redEnemy
   layers:
   - Default
   - TransparentFX
