@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class enemyInteract : MonoBehaviour
 {
     public int score = 0;
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         //assigns the renderer
@@ -14,9 +15,10 @@ public class enemyInteract : MonoBehaviour
             (other.gameObject.tag == "yellowEnemy" && gameObject.tag == "yellow") || (other.gameObject.tag == "pinkEnemy" && gameObject.tag == "pink") ||
             (other.gameObject.tag == "lightBlueEnemy" && gameObject.tag == "lightBlue") || (other.gameObject.tag == "whiteEnemy" && gameObject.tag == "white"))
         {
-
+            
             Destroy(other.gameObject);
             score += 1;
+            
 
         }
         //if front rectangle colides with an enemy and it s not the same colour then restart level
@@ -25,6 +27,7 @@ public class enemyInteract : MonoBehaviour
         {
             Application.LoadLevel(Application.loadedLevel);
         }
+        
 
     }
 
