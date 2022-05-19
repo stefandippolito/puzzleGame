@@ -13,6 +13,8 @@ public class score : MonoBehaviour
     private int playerScore;
     // Gets variable for text component
     public TextMeshProUGUI scoreText;
+    public PlayerMovement speedScript;
+    
 
     
     // Update is called once per frame
@@ -23,6 +25,20 @@ public class score : MonoBehaviour
         
         // Changes the text component to show the score
         scoreText.SetText(playerScore.ToString());
+
+        // every interval of 5 the players score goes up by the speed of the player increases by 3 units
+        if (playerScore % 5 == 0 && (script1.hit || script2.hit || script3.hit || script4.hit))
+        {
+            speedScript.speed = speedScript.speed + 3f;
+
+            // changes the hit bool in each rectangle to false so this is only changed once and not for every frame untill player score switches
+            script1.hit = false;
+            script2.hit = false;
+            script3.hit = false;
+            script4.hit = false;
+
+        }
+
 
     }
 }

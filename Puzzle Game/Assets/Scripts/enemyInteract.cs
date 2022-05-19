@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class enemyInteract : MonoBehaviour
 {
     public int score = 0;
+    public bool hit = false;
     
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -18,6 +19,7 @@ public class enemyInteract : MonoBehaviour
             
             Destroy(other.gameObject);
             score += 1;
+            hit = true;
             
 
         }

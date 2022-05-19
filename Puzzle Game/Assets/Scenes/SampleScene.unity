@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579beea6e8d87e44892a77a5f8bdeec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7
 --- !u!4 &236100377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4956682296286442928, guid: f25bdcb074ec4b04c82fe64d102f2828, type: 3}
@@ -954,6 +954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  hit: 0
 --- !u!1 &978938349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,6 +1839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  hit: 0
 --- !u!1 &1521192642
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,6 +2279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  hit: 0
 --- !u!4 &1611025641 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6115165148080334650, guid: d33aa1ecdde6f6548afa9428865448bc, type: 3}
@@ -3023,6 +3026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  hit: 0
 --- !u!1 &2085064992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3255,6 +3259,7 @@ MonoBehaviour:
   script3: {fileID: 2053322479}
   script4: {fileID: 880174556}
   scoreText: {fileID: 2087810011}
+  speedScript: {fileID: 222394502}
 --- !u!1001 &2668694148043125604
 PrefabInstance:
   m_ObjectHideFlags: 0

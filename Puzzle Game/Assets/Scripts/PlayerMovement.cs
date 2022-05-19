@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 7f;
     // Start is called before the first frame update
     
 
     // Update is called once per frame
     void Update()
     {
+        
+        
         //if player presses R rotate 90 degreese on the z
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -38,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
+
+        
 
 
 
